@@ -8,6 +8,8 @@
         <h1>
             Web Exploitation
         </h1>
+        <p>todo: search srccode, check srccode, sql injection, command injection, /robots.txt, burpsuite </p>
+        <p>cool websites: <a href="https://book.hacktricks.xyz/">hacktricks</a></p>
             <h2>
                 WebDecode
             </h2>
@@ -39,7 +41,7 @@
                 findme
             </h2>
             <p>
-                the hint is "any redirections?", something must be in the networking, using burpsuite we get the flag devided by 2 parts
+                the hint is "any redirections?", something must be in the networking, using burpsuite we get the flag divided by 2 parts
             </p>
             <img src="images/Screenshot 2024-07-21 004125.png" height="300" >
             <img src="images/Screenshot 2024-07-21 004134.png" height="300" >
@@ -79,5 +81,29 @@
                 it seems like the web return the file if we have the file path, so we navigate to the root directory first and access the flag
             </p>
             <img src="images/Screenshot 2024-07-21 023121.png" height="300" >
+            <!-- <img src="images" height="200" > -->
+            <h2>
+                JAuth
+            </h2>
+            <p>
+                a JSON Web Token related problem which can be solved by using "none attack", change the jwt's alg to "none" and user to "admin", delete the signature part and send it back to the sever
+            </p>
+            <p>i spent 3 fucking hours on this because i missed the dot "." in the last of the payload</p>
+            <p>some very cool websites about JWT: </p>
+            <a href="https://viblo.asia/p/json-web-token-hay-session-cookies-dau-moi-la-chan-ai-Qbq5Q0oJlD8">basic cover</a>
+            <p></p>
+            <a href="https://medium.com/@musab_alharany/10-ways-to-exploit-json-web-token-jwt-ac5f4efbc41b">ways to attack</a>
+            <p></p>
+            <a href="https://token.dev/">JWT decoder</a>
+            <p></p>
+            <img src="images/Screenshot 2024-07-21 133257.png" height="400" >
+            <!-- <img src="images" height="200" > -->
+            <h2>
+                caas
+            </h2>
+            <p>
+                use command injection we get the flag
+            </p>
+            <img src="images/Screenshot 2024-07-21 140549.png" height="300" >
     </body>
-</html>
+</html>             
