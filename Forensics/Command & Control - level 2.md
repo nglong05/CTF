@@ -7,3 +7,5 @@ The uncompressed memory dump md5 hash is e3a902d4d44e0f7bd9cb29865e0a15de
 ## Solution
 - volatility -f ./ch2.dmp imageinfo
 - volatility -f ./ch2.dmp --profile=Win7SP0x86 envars
+- volatility -f ch2.dmp --profile=Win7SP0x86 hashdump
+- john --format=NT hash.txt
